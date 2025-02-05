@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1 class="title">¿Quieres ser mi San Valentín?</h1>
     <div class="envelope-container" onclick="openEnvelope()">
         <div class="envelope">
             <div class="top"></div>
             <div class="letter">
-                <h1>¿Quieres ser mi San Valentín?</h1>
-                <div class="buttons">
-                    <button class="yes-button" onclick="handleYesClick()">Sí</button>
-                    <button class="no-button" onclick="handleNoClick()">No</button>
-                </div>
-                <div class="explanation">
-                    <p><strong>VERDE = Sí, ROJO = No</strong></p>
-                </div>
-                <div class="gif_container">
-                    <img src="img/yo.png" alt="Imagen local" width="300" height="200">
-                </div>
+                <p class="explanation">VERDE = Sí, ROJO = No</p>
             </div>
         </div>
     </div>
+    <div class="corner-images">
+        <img src="img/yo.png" class="corner top-left" alt="Top Left">
+        <img src="img/yo.png" class="corner top-right" alt="Top Right">
+        <img src="img/yo.png" class="corner bottom-left" alt="Bottom Left">
+        <img src="img/yo.png" class="corner bottom-right" alt="Bottom Right">
+    </div>
+
+    <!-- Botones afuera de la carta, inicialmente ocultos -->
+    <div class="buttons-container hidden">
+        <button class="yes-button" onclick="handleYesClick()">Sí</button>
+        <button class="no-button" onclick="handleNoClick()">No</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
