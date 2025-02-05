@@ -48,7 +48,7 @@ body {
   height: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-top: 100px solid #b71c1c;
+  border-top: 100px solid #700000;
   transition: transform 0.8s ease-in-out;
 }
 
@@ -57,7 +57,7 @@ body {
   position: absolute;
   width: 90%;
   height: 90%;
-  background: white;
+  background: rgba(248, 216, 34, 0.725);
   padding: 20px;
   text-align: center;
   display: flex;
@@ -117,7 +117,7 @@ body {
   padding: 10px 20px;
   width: 150px;
   background-color: #f44336;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -139,8 +139,8 @@ body {
 
 .corner {
   position: absolute;
-  width: 80px; /* Ajusta el tamaño de las imágenes según lo necesites */
-  height: 80px;
+  width: 85px; /* Ajusta el tamaño de las imágenes según lo necesites */
+  height: 85px;
   object-fit: cover;
 }
 
