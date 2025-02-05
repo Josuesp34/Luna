@@ -21,7 +21,10 @@ h1 {
 }
 
 .buttons {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los botones */
+  gap: 10px; /* Espacio entre los botones */
 }
 
 .yes-button, .no-button {
