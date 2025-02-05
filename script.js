@@ -3,8 +3,8 @@ const mensajes = [
     "¿Realmente segura??",
     "¿Amor, de verdad estás segura?",
     "Si dices que no, me pondré muy triste...",
-    "Me pondré muy triste...",
-    "Me pondré muy muy muy triste...",
+    "De verdad me pondre triste :(",
+    "muy muy muy triste...",
     "Okey grosera:(",
     "Es broma Amor porfa di que sí :) ❤️"
 ];
