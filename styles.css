@@ -29,4 +29,5 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease; /* Añadir una transición
+  transition: all 0.3s ease;
+}
