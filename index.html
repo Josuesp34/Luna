@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quieres ser mi san valentin?</title>
+    <title>¿Quieres ser mi San Valentín?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>¿Quieres ser mi san valentin?</h1>
-        <div class="buttons">
-            <button class="yes-button" onclick="handleYesClick()">Si</button>
-            <button class="no-button" onclick="handleNoClick()">No</button>
-        </div>
-        <div class="explanation">
-            <p><strong>VERDE = Si, ROJO = No</strong></p>
-        </div>
-        <div class="gif_container">
-            <img src="img/yo.png" alt="Imagen local" width="300" height="200">
+    <div class="envelope-container" onclick="openEnvelope()">
+        <div class="envelope">
+            <div class="top"></div>
+            <div class="letter">
+                <h1>¿Quieres ser mi San Valentín?</h1>
+                <div class="buttons">
+                    <button class="yes-button" onclick="handleYesClick()">Sí</button>
+                    <button class="no-button" onclick="handleNoClick()">No</button>
+                </div>
+                <div class="explanation">
+                    <p><strong>VERDE = Sí, ROJO = No</strong></p>
+                </div>
+                <div class="gif_container">
+                    <img src="img/yo.png" alt="Imagen local" width="300" height="200">
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

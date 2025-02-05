@@ -3,7 +3,7 @@ const mensajes = [
     "¿Realmente segura??",
     "¿Amor, de verdad estás segura?",
     "Si dices que no, me pondré muy triste...",
-    "De verdad me pondre triste :(",
+    "De verdad me pondré triste :(",
     "muy muy muy triste...",
     "Okey grosera:(",
     "Es broma Amor porfa di que sí :) ❤️"
@@ -22,4 +22,8 @@ function handleNoClick() {
 
 function handleYesClick() {
     window.location.href = "yes_page.html";
+}
+
+function openEnvelope() {
+    document.querySelector('.envelope').classList.add('open');
 }

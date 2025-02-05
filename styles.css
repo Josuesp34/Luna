@@ -4,33 +4,76 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url('img/fondo.jpg'); /* Cambia esta ruta por la de tu imagen */
-  background-size: cover; /* Hace que la imagen cubra todo el fondo */
-  background-position: center; /* Centra la imagen */
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
   font-family: 'Arial', sans-serif;
-  flex-direction: column;
 }
 
-.container {
+.envelope-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.envelope {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d32f2f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s ease-in-out;
+}
+
+.envelope .top {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid #b71c1c;
+  transition: transform 0.8s ease-in-out;
+}
+
+.letter {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: white;
+  padding: 20px;
   text-align: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #000000;
+.envelope.open .top {
+  transform: rotateX(180deg);
 }
 
+.envelope.open .letter {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Botones */
 .buttons {
   display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  align-items: center; /* Centra los botones */
-  gap: 10px; /* Espacio entre los botones */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .yes-button, .no-button {
   font-size: 1.5em;
   padding: 10px 20px;
-  margin-right: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -38,12 +81,12 @@ h1 {
 }
 
 .yes-button {
-  background-color: #4CAF50; /* Verde */
+  background-color: #4CAF50;
   color: white;
 }
 
 .no-button {
-  background-color: #f44336; /* Rojo */
+  background-color: #f44336;
   color: white;
 }
 
@@ -58,15 +101,13 @@ h1 {
 .explanation {
   margin-top: 20px;
   padding: 10px;
-  background-color: #e0e0e0; /* Fondo gris claro para el recuadro */
-  border: 2px solid #000; /* Borde negro */
-  border-radius: 8px; /* Bordes redondeados */
+  background-color: #e0e0e0;
+  border: 2px solid #000;
+  border-radius: 8px;
   font-size: 1.2em;
   text-align: center;
 }
 
-.explanation p {
-  margin: 0;
-  font-weight: bold;
-  color: #333;
+.gif_container {
+  margin-top: 20px;
 }
