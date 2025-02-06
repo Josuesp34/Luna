@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  perspective: 1000px; /* Añadido para dar perspectiva a la animación */
 }
 
 /* Sobre rojo */
@@ -30,7 +31,8 @@ body {
   width: 300px;
   height: 200px;
   background: #d32f2f;
-  border-radius: 10px;
+  border-radius: 15px; /* Bordes más suaves */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras para darle un efecto de profundidad */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +50,7 @@ body {
   height: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-top: 100px solid #700000;
+  border-top: 100px solid #b71c1c; /* Triángulo más estilizado */
   transition: transform 0.8s ease-in-out;
 }
 
@@ -69,6 +71,10 @@ body {
   transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background-image: url('img/corazon.jpg'); /* Aquí puedes poner la imagen de fondo */
+  background-size: cover; /* Ajustar imagen para cubrir el espacio */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
 }
 
 /* Texto dentro de la carta */
